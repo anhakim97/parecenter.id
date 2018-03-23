@@ -8,7 +8,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 
-	public function view($halaman = 'test'){
+	public function view($halaman = 'index'){
 		
 		if(!file_exists(APPPATH."views/pages/".$halaman.'.php')){
 			show_404();
